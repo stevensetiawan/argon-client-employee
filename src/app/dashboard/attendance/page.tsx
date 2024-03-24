@@ -4,21 +4,19 @@ import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 
 import { config } from '@/config';
-import { AttendancesFilters } from '@/components/dashboard/attendance/attendances-filters';
-import { AttendancesTable } from '@/components/dashboard/attendance/attendances-table';
+import { Attendance } from '@/components/dashboard/attendance/attendance';
 
-export const metadata = { title: `Attendances | Dashboard | ${config.site.name}` } satisfies Metadata;
+export const metadata = { title: `Attendance | Dashboard | ${config.site.name}` } satisfies Metadata;
 
 export default function Page(): React.JSX.Element {
   return (
     <Stack spacing={3}>
       <Stack direction="row" spacing={3}>
         <Stack spacing={1} sx={{ flex: '1 1 auto' }}>
-          <Typography variant="h4">Attendances</Typography>
+          <Typography variant="h4">Attendance</Typography>
         </Stack>
       </Stack>
-      <AttendancesFilters />
-      <AttendancesTable />
+      <Attendance />
     </Stack>
   );
 }

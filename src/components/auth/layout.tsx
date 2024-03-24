@@ -37,11 +37,11 @@ export function Layout({ children }: LayoutProps): React.JSX.Element {
             <Typography color="inherit" sx={{ fontSize: '24px', lineHeight: '32px', textAlign: 'center' }} variant="h1">
               Welcome to{' '}
               <Box component="span" sx={{ color: '#15b79e' }}>
-                Argon Admin
+                Argon Client
               </Box>
             </Typography>
             <Typography align="center" variant="subtitle1">
-              Argon admin HR.
+              Argon Employee App.
             </Typography>
           </Stack>
           <Box sx={{ display: 'flex', justifyContent: 'center' }}>

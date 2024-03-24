@@ -10,7 +10,6 @@ export interface User {
 export interface SignInParams {
   email: string;
   password: string;
-  position: string;
 }
 
 export interface SignInResponse {

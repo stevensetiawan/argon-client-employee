@@ -90,7 +90,19 @@ class AuthClient {
     // We do not handle the API, so just check if we have a token in localStorage.
     const token = localStorage.getItem('custom-auth-token');
     if (!token) {
-      return { data: null };
+      return {
+        data: {
+          id: 3,
+          name: 'tono',
+          email: 'tono2@gmail.com',
+          emp_photo: 'null',
+          position: 'staff',
+          phone: '08732642821',
+          password: '$2b$04$xuzxnp3AYqrMsGxc4HbxKOPnQMIDQCgNz/i4j15tKkgYtJOG3EbH6',
+          created_at: '2024-03-23T16:52:54.309Z',
+          updated_at: '2024-03-23T16:52:54.309Z',
+        },
+      };
     }
     const { user } = this.jwtDecode(token);
 

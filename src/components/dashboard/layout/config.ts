@@ -3,14 +3,10 @@ import { paths } from '@/paths';
 
 export const navItems = [
   {
-    key: 'employees',
-    title: 'Employees',
-    href: paths.dashboard.employees,
-    icon: 'users',
-    matcher: {
-      href: paths.dashboard.employees,
-      type: 'startsWith',
-    },
+    key: 'attendance',
+    title: 'Attendance',
+    href: paths.dashboard.attendance,
+    icon: 'timer',
   },
-  { key: 'attendances', title: 'Attendances', href: paths.dashboard.attendances, icon: 'timer' },
+  { key: 'attendances-summary', title: 'Attendances Summary', href: paths.dashboard.attendancesSummary, icon: 'file' },
 ] satisfies NavItemConfig[];
